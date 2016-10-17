@@ -26,9 +26,15 @@ var fourthFunction = function(input) {
   var locateLetter = input.charAt(divide);
   var combine = locateLetter + combineFunctions(input);
 
-  console.log(combine);
+  alert(combine);
 };
 
-var input = prompt("Enter a sentence:");
+jQuery("h1").click(function() {
+  var input = prompt("Enter a sentence:");
+  alert(input);
+});
 
-fourthFunction(input);
+jQuery("p").click(function() {
+  var input = prompt("Enter a sentence:");
+  fourthFunction(input);
+});
